@@ -1,7 +1,31 @@
 // Tips:
 // Use FontsAwesome css classes as icons assets, ex. i.fas.fa-times
 // Use variable image to grab img src value
-//- - var image = "https://source.unsplash.com/featured/600x600?newsletter"
-//- section.newsletter-wrapper
-//-   .newsletter
-//-     img(src=image alt="newsletter image")
+- var image = "https://source.unsplash.com/featured/600x600?newsletter"
+  #modal-overlay
+    section.newsletter-wrapper
+      .newsletter
+        img(src=image alt="newsletter image")
+        .container
+          <button id='close-modal'><i class="fa fa-times-circle" style="font-size:24px"></i></button>
+          <div class='headerContainer'>
+            h1.header Newsletter Subscription
+            p.text sing in to our newsletter
+          </div>
+          form.formContainer
+            input.email(type='email' required placeholder='Type your email address')
+            .textError Please provide a valid email
+            <div class='sex'>
+              span I'm
+              input(type='radio' required id="sex" name="gender" value="male")
+              label(for='gender') Male
+              input(type='radio' required id="sex" name="gender" value="female")
+              label(for='gender') Female
+              .radioError This field is required
+            </div>
+            <div class='terms'>
+              input(type='checkbox' required id="terms" name="pp-check" value="on")
+              label(for='pp-check') I agree to terms & conditions
+              .checkError This field is required
+            </div>
+            button.button(type='submit') submit
