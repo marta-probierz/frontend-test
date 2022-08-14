@@ -7,13 +7,29 @@
       .newsletter
         img(src=image alt="newsletter image")
         .container
+          <div class="spinner">
+            .bar1
+            .bar2
+            .bar3
+            .bar4
+            .bar5
+            .bar6
+            .bar7
+            .bar8
+            .bar9
+            .bar10
+            .bar11
+            .bar12
+          </div>
           <button id='close-modal'><i class="fa fa-times-circle" style="font-size:24px"></i></button>
           <div class='headerContainer'>
             h1.header Newsletter Subscription
             p.text sing in to our newsletter
           </div>
           form.formContainer
-            input.email(type='email' required placeholder='Type your email address')
+            .addedInfo Added to subscribers list
+            .already You are already in our subscribers list
+            input.email(type='email' name='email' required placeholder='Type your email address')
             .textError Please provide a valid email
             <div class='sex'>
               span I'm
