@@ -14,6 +14,10 @@
     height: 169vh;
   }
 
+  @media (max-width: 600px) {
+    height: 110vh;
+  }
+
   @keyframes modal {
 
     30% {
@@ -45,6 +49,7 @@
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 2.5fr;
+      height: 620px;
     }
   }
 
@@ -67,7 +72,7 @@
   }
 
   .header {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     font-size: 2rem;
     font-family: 'Lobster', sans-serif;
 
@@ -79,6 +84,7 @@
 
   .text {
     font-style: italic;
+    padding-bottom: 1rem;
   }
 
   img {
@@ -88,7 +94,7 @@
     border-radius: 20px 0 0 20px;
 
     @media (max-width: 600px) {
-      height: 160px;
+      height: 180px;
       border-radius: 20px 20px 0 0;
     }
   }
@@ -210,16 +216,25 @@
     color: #FFF;
     background-color: #000;
     height: 3rem;
+
+    @media (max-width: 600px) {
+      margin-top: 1.5rem;
+    }
   }
 
   .addedInfo,
   .already {
     text-align: start;
+    margin-top: -2rem;
     margin-bottom: 1rem;
     background-color: rgb(95, 226, 52);
     width: 100%;
     padding: 5px;
     display: none;
+
+    @media (max-width: 600px) {
+      margin-top: -.5rem;
+    }
   }
 
   .already {
